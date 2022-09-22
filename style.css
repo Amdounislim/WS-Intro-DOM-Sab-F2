@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 70px;
+}
+
+header{
+    display: flex;
+    background-color: #005246;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.myList{
+list-style: none;
+display: flex;
+justify-content: space-between;
+width: 40%;
+}
+
+.myList li{
+    /* border: 1px black solid; */
+    /* padding: 20px; */
+    /* margin: 20px; */
+}
+
+.myList a{
+    color: white;
+    text-decoration: none;
+}
+
+#about {
+    position: relative;
+}
+
+.dropDown{
+    list-style-type: none;
+    background-color: #005246;
+    opacity: 0.8;
+    padding: 20px;
+    position: absolute;
+    top: 16px;
+    display: none;
+}
+.dropDown li{
+    color: white;
+    padding: 10px;
+}
+#about:hover .dropDown{
+    display: block;
+}
+
+main{
+    margin: 5%;
+}
+main p{
+    margin: 2%;
+}
