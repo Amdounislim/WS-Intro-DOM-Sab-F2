@@ -32,5 +32,24 @@ for(let el of prices){
     el.addEventListener("click", function(){
         el.style.color = "green"
         el.innerHTML = +el.innerHTML + 50
+        Say(el.innerHTML)
     })
 }
+
+var works1 = Array.from(document.querySelectorAll(".works"))
+// var works2 = document.querySelector(".works")
+// console.log(works1)
+// console.log(works2)
+
+for(let i=0; i<works1.length; i++){
+    works1[i].addEventListener('click', function(){
+        works1[i].nextElementSibling.innerHTML = "Hello i am Foulen"
+        works1[i].previousElementSibling.innerHTML = "Hello i am Foulen"
+    })
+}
+
+
+function Say(x){
+    console.log('Hello i am Foulen ' + x ) 
+}
+
